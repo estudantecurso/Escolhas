@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Moderustic:wght@300..800&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    
+<!-- TÍTULO QUE FICA NO TOPO DA GUIA !-->
+<title> A missao de Lucas</title>
+  
+</head>
+
+<!-- CORPO DA PÁGINA !-->
+<body>
+<main>
+  
+<!--PRIMEIRA TELA DE CARREGAMENTO !-->
+<div class="passo ativo" id="passo-0">
+<img src="logo.png">
+<p> Lucas é um jovem aventureiro que vive na pequena vila de Árvores Altas, situada ao lado da misteriosa Floresta Encantada. Um dia, ele descobre que a floresta está em perigo devido a uma maldição que ameaça destruir toda a sua magia. A única esperança para salvar a floresta é que Lucas consiga encontrar e reunir quatro amuletos mágicos escondidos em diferentes partes da floresta. <p>
+  
+<button class="proximo" data-proximo= "1"> Rumo ao Vale Sombrio🏡 </button>
+  
+<button class="proximo" data-proximo= "2"> Subir a Montanha Ventosa ⛰</button>
+</div>
+  
+<!-- BOTÃO ESCOLHA 1 !-->
+<div class="passo" id="passo-1">
+<img src="logo.png">
+<p> Um vale escuro e perigoso, mas onde o primeiro amuleto está escondido. <p>
+  
+<button class="proximo" data-proximo= "3"> Enfrentar a Criatura Guardiã👹</button>
+  
+<button class="proximo" data-proximo= "4"> Procurar uma Forma de Enganar a Criatura🦹‍♀️ </button>
+</div>
+  
+<!-- BOTÃO ESCOLHA 2 !-->
+<div class="passo" id="passo-2">
+<img src="logo.png">
+<p> Uma montanha alta e íngreme, conhecida por ventos fortes, onde o segundo amuleto está guardado.<p>
+  
+<button class="proximo" data-proximo= "5"> Enfrentar a Criatura Guardiã👹</button>
+  
+<button class="proximo" data-proximo= "6"> Desistir e voltar para a sua casa.🏡</button>
+</div>
+  
+<!-- BOTÃO ESCOLHA 3-->
+<div class="passo" id="passo-3">
+<img src="logo.png" alt="LOGO NORMAL">
+<p> Lucas decide lutar contra a criatura que protege o amuleto no Vale Sombrio.</p>
+  
+<button class = "proximo" data-proximo = "7"> Ajudar o Povo da Floresta🌼</button>
+
+</div>
+
+
+<!-- BOTÃO ESCOLHA 4-->
+<div class="passo" id="passo-4">
+<img src="logo.png" alt="LOGO NORMAL">
+<p>  Ele tenta encontrar uma maneira de passar pela criatura sem lutar.  </p>
+  
+<button class="proximo" data-proximo= "8" > Não ajudar o povo da floresta 🌹</button>
+
+</div>
+
+  
+<!-- BOTÃO ESCOLHA 5-->
+<div class="passo" id="passo-5">
+<img src="logo.png" alt="LOGO NORMAL">
+<p>  Lucas decide lutar contra a criatura que protege o amuleto na Montanha Ventosa </p>
+  
+<button class="proximo" data-proximo="9"> Ajudar o Povo da Floresta🌼 </button>
+
+</div>
+  
+<!-- BOTÃO ESCOLHA 6-->
+<div class="passo" id="passo-6">
+<img src="perdeu.png" alt="IMAGEM PERDEU">
+<p> Ele volta para a sua casa, sem pegar os amuletos.</p>
+  
+<button class="proximo" data-proximo="0"> Reiniciar? 🕹 </button>
+
+</div>
+
+<!-- BOTÃO ESCOLHA 7-->
+<div class="passo" id="passo-7">
+<img src="logo.png">
+<p> Lucas encontra uma aldeia de seres mágicos que precisam de ajuda para defender sua casa de invasores. Se ajudar, eles o guiarão até o terceiro amuleto. </p>
+<button class="proximo" data-proximo="10"> Confiar na Bruxa🧙‍♀️ </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 8-->
+<div class="passo" id="passo-8">
+<img src="perdeu.png" alt="IMAGEM PERDEU">
+<p>  Da errado e ele precisa voltar do inicio </p>
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 9-->
+<div class="passo" id="passo-9">
+<img src="logo.png" alt="LOGO NORMAL">
+<p>  Lucas encontra uma aldeia de seres mágicos que precisam de ajuda para defender sua casa de invasores. Se ajudar, eles o guiarão até o terceiro amuleto.</p>
+<button class = "proximo" data-proximo = "11"> Confiar no Monstro.👹  </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 10-->
+<div class="passo" id="passo-10">
+<img src="ganhou.png" alt="IMAGEM GANHOU">
+<p> A Bruxa oferece ajuda em troca de um favor futuro. Ela pode revelar a localização do último amuleto. Ele consegue o último amuleto e consegue acabar com toda a maldição da floresta. </p>
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 11-->
+<div class="passo" id="passo-11">
+<img src="perdeu.png" alt="IMAGEM PERDEU">
+<p> O Monstro oferece ajuda em troca de um favor futuro. Ele pode revelar a localização do último amuleto.  Ele consegue ganhar o último amuleto, porém não consegue resolver a maldição da floresta, causando mais dano à ela. </p>
+  
+<button class="proximo" data-proximo="0"> Reiniciar? 🕹 </button>
+
+</div>
+  
+</main>
+  
+<!-- CRÉDITOS -->
+<footer>
+<p> Jogo produzido por <a href="https://github.com/estudantecurso" target="_blank" class="nome-link"> Ana Caroline De Marchi Arruda. </a> </p>
+</footer>
+  
+<script src="sketch.js"></script>
+  
+</body>
+
+</html>
+
