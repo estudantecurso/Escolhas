@@ -1,0 +1,63 @@
+html, body {
+  font-family: "Moderustic", sans-serif;
+  background-color: black;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  background-image: url("fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+button {
+  font-family: "Matemasie", sans-serif;
+  background-color: rgb(138,221,138);
+  border: solid 2px black;
+  border-radius: 200px;
+  font-size: 30px;
+  margin: 20px;
+  color: black;
+}
+
+.passo {
+  display: none;
+}
+
+.passo.ativo {
+  display: block;
+}
+
+main {
+  max-width: 90%;
+  text-align: center;
+  flex: 1;
+}
+
+img {
+  width: 700px;
+}
+
+footer {
+  color: white;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nome-link {
+  font-family: "New Amsterdam", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.nome-link:hover {
+  text-decoration: underline;
+}
+
+
+
